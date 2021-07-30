@@ -1,0 +1,15 @@
+.bg--video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .15;
+    overflow: hidden; // property controls what happens to content that is too big to fit into an area
+    &__content {
+        height: 100%;
+        width: 100%;
+        object-fit: cover; //  property is used to specify how an <img> or <video> should be resized to fit its container
+    }
+}
